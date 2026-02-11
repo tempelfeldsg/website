@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link"
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-import { IoLogoGithub, IoLogoTwitter, IoIosMail } from "react-icons/io";
+import { IoLogoGithub, IoIosMail } from "react-icons/io";
 
 export default function Home() 
 {
@@ -16,7 +16,7 @@ export default function Home()
 	const scale = useTransform(scrollYProgress, [0.2, 0.5], [1.25, 0.5]);
 	const backcard_opacity = useTransform(scrollYProgress, [0.45, 0.5], [0, 1]);
 	const chesspiece_opacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
-	const card_opacity = useTransform(scrollYProgress, [0, 0.1], [1, 0], {clamp: true});
+	const card_opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0], {clamp: true});
 	const card_display = useTransform(scrollYProgress, (value) => (value > 0.1 ? "none" : "block"));
 
 	const scrollToBottom = () => {
@@ -61,7 +61,6 @@ return (
 				<div className="text-white font-[Title] text-7xl pt-16 pb-2 px-4 ">Contact Me</div>
 				<div className="flex items-center justify-evenly gap-8 text-zinc-300 pt-12">
 					<a href="https://github.com/tempelfeldsg"><IoLogoGithub className="size-14 hover:text-zinc-500 duration-70 cursor-pointer" /></a>
-					<a href="#"><IoLogoTwitter className="size-14 hover:text-zinc-500 duration-70 cursor-pointer" /></a>
 					<a href="mailto:tempelfelds.gustavs@gmail.com"><IoIosMail className="size-14 hover:text-zinc-500 duration-70 cursor-pointer" /></a>
 				</div>
 				
