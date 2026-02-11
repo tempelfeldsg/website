@@ -5,3 +5,18 @@
   --foreground: #171717;
 }
 
+@font-face {
+	font-family: Title;
+	src: url("/title.ttf");
+}
+
+@font-face {
+	font-family: Main;
+	src: url("/main.ttf");
+}
+
+@font-face {
+	font-family: Action;
+	src: url("/action.ttf");
+}
+
