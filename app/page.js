@@ -37,6 +37,7 @@ return (
             			className="absolute inset-0 h-full w-full object-cover object-center pointer-events-none"
 				fill
 				priority
+				unoptimized
           		/>
 			<motion.div className="w-[40%] h-[30%] flex justify-start items-center flex-col top-4/10 left-1/5 absolute z-50" style={{ opacity: card_opacity, display: card_display }}>
 			<div className="text-white font-[Title] text-4xl text-center">Gustavs Tempelfelds</div>
@@ -56,6 +57,7 @@ return (
 					style={{ opacity: chesspiece_opacity }}
 					fill
 					priority
+					unoptimized
             			/>
 				<motion.div className="absolute top-2/6 left-1/5 flex flex-col justify-start items-center text-8xl text-center w-[40%] h-[40%] " style={{ opacity: backcard_opacity }}>
 				<div className="text-white font-[Title] text-7xl pt-16 pb-2 px-4 ">Contact Me</div>
