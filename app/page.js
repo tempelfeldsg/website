@@ -42,7 +42,7 @@ return (
 			<motion.div className="w-[40%] h-[30%] flex justify-start items-center flex-col top-4/10 left-1/5 absolute z-50" style={{ opacity: card_opacity, display: card_display }}>
 			<div className="text-white font-[Title] text-4xl text-center">Gustavs Tempelfelds</div>
 			<div className="text-white font-[Main] text-xs text-center ">Technical Artist & Pipeline Developer</div>
-			<div className="text-white font-[Main] text-xs text-center px-20 pt-12 leading-relaxed ">I build performant tools and systems around Blender, focusing on rendering workflows, automation, and reproducible pipelines. My work bridges art and engineering — designing infrastructure that helps artists create faster and more reliably.</div>
+			<div className="text-white font-[Main] text-xs text-center px-20 pt-12 leading-relaxed ">Work in progress</div>
 			<div className="flex justify-center font-[Main] text-sm gap-8 text-white items-center pt-8">
 				<Link href="/blog" className="h-8 w-12 flex items-center justify-center text-center hover:text-zinc-500 cursor-pointer duration-70 ">Blog</Link>
 				<Link href="/portfolio" className="h-8 w-12 flex items-center justify-center text-center hover:text-zinc-500 cursor-pointer duration-70">Portfolio</Link>
