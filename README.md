@@ -10,3 +10,5 @@
 -- Adjust for mobile
 
 -- Adjust for scaling
+
+-- fix different browsers not rendering correctly
