@@ -1,11 +1,6 @@
 ## TODO:
--- Add Blog | DONE
-
--- Add Portfolio
 
 -- Add description
-
--- Add twitter
 
 ## FIX:
 -- Fix flicker due to wireframe image loading in before the first render image
