@@ -1,34 +1,41 @@
 import { posts } from "../posts"
 import { notFound } from "next/navigation"
+import Link from "next/link"
 
-export function generateStaticParams() {
-  return posts.map((post) => ({
-    slug: post.slug,
-  }))
-}
+export function generateStaticParams() { return posts.map((post) => ({slug: post.slug}))};
 
-export default function BlogPost({ params }) {
-  const post = posts.find((p) => p.slug === params.slug)
+export default async function BlogPost({ params }) 
+{
 
-  if (!post) return notFound()
+	const { slug } = await params
+  	const post = posts.find((p) => p.slug === slug)
 
-  return (
-    <main className="bg-black text-white min-h-screen">
-      <article className="max-w-3xl mx-auto px-8 py-24">
-        <h1 className="text-4xl font-[Title] mb-4">
-          {post.title}
-        </h1>
+  	if (!post) 
+	{
+    		return notFound()
+  	}
 
-        <div className="text-zinc-500 text-sm mb-12">
-          {post.date}
-        </div>
+return (
+<main className="p-12 bg-black text-white min-h-screen">
+	<div className="max-w-3xl pt-4 mb-4">
+  		<Link href="/blog" className="text-zinc-500 text-start flex hover:text-zinc-400 text-sm font-[Main]">
+    		← Back 
+  		</Link>
+	</div>
 
-        <div
-          className="prose prose-invert max-w-none font-[Main]"
-          dangerouslySetInnerHTML={{ __html: post.content }}
+	<article className="max-w-8xl mx-auto py-8 flex flex-col items-center justify-start">
+        	<h1 className="text-3xl text-center font-[Title] ">
+          		{post.title}
+        	</h1>
+
+		<div className="flex font-[Main] justify-start items-center gap-4 mt-2">
+      			<p className="text-zinc-500 text-sm">{post.date}</p>
+      			<p className="text-zinc-500 text-sm">{post.readTime}</p>
+    		</div>
+        	<div className="prose prose-invert max-w-none mt-24 font-[Main]"
+          		dangerouslySetInnerHTML={{ __html: post.content }}
         />
       </article>
-    </main>
-  )
-}
+</main>
+)}
 
