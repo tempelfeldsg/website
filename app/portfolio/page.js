@@ -27,10 +27,8 @@ return (
     				<h2 className="text-2xl font-[Title] group-hover:text-zinc-400 transition-colors">{p.title}</h2>
 
     				<div className="flex font-[Main] justify-start items-center gap-4 mt-2">
-
       					<p className="text-zinc-500 text-sm">{p.desc}</p>
       					<p className="text-zinc-500 text-sm">{p.date}</p>
-
     				</div>
   			</div>
 		</Link>
