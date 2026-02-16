@@ -5,7 +5,13 @@ export default function Blog()
 {
 
 return (
-<main className="bg-black text-white min-h-screen px-12 py-18">
+<main className="bg-black text-white min-h-screen px-12 py-12">
+	<div className="max-w-3xl pt-4 mb-4">
+  		<Link href="/" className="text-zinc-500 text-start flex hover:text-zinc-400 text-sm font-[Main]">
+    		← Back 
+  		</Link>
+	</div>
+
 	<div className="mb-20">
         	<h1 className="text-5xl font-[Title]">Blog</h1>
         	<p className="text-zinc-400 mt-4 font-[Main]">
