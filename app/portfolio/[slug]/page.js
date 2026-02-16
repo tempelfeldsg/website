@@ -1,16 +1,16 @@
-import { posts } from "../posts"
+import { portfolio } from "../portfolio"
 import { notFound } from "next/navigation"
 import Link from "next/link"
 
-export function generateStaticParams() { return posts.map((post) => ({slug: post.slug}))};
+export function generateStaticParams() { return portfolio.map((p) => ({slug: p.slug}))};
 
 export default async function PortfolioPost({ params }) 
 {
 
 	const { slug } = await params
-  	const post = posts.find((p) => p.slug === slug)
+  	const pf = portfolio.find((p) => p.slug === slug)
 
-  	if (!post) 
+  	if (!pf) 
 	{
     		return notFound()
   	}
@@ -25,15 +25,15 @@ return (
 
 	<article className="max-w-8xl mx-auto py-8 flex flex-col items-center justify-start">
         	<h1 className="text-3xl text-center font-[Title] ">
-          		{post.title}
+          		{pf.title}
         	</h1>
 
 		<div className="flex font-[Main] justify-start items-center gap-4 mt-2">
-      			<p className="text-zinc-500 text-sm">{post.date}</p>
-      			<p className="text-zinc-500 text-sm">{post.readTime}</p>
+      			<p className="text-zinc-500 text-sm">{pf.date}</p>
+      			<p className="text-zinc-500 text-sm">{pf.readTime}</p>
     		</div>
         	<div className="prose prose-invert max-w-none mt-24 font-[Main]"
-          		dangerouslySetInnerHTML={{ __html: post.content }}
+          		dangerouslySetInnerHTML={{ __html: pf.content }}
         />
       </article>
 </main>
