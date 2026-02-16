@@ -5,6 +5,7 @@ import Link from "next/link"
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import { IoLogoGithub, IoIosMail } from "react-icons/io";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 export default function Home() 
 {
@@ -62,6 +63,7 @@ return (
 				<motion.div className="absolute top-2/6 left-1/5 flex flex-col justify-start items-center text-8xl text-center w-[40%] h-[40%] " style={{ opacity: backcard_opacity }}>
 				<div className="text-white font-[Title] text-7xl pt-16 pb-2 px-4 ">Contact Me</div>
 				<div className="flex items-center justify-evenly gap-8 text-zinc-300 pt-12">
+					<a href="https://x.com/tempelfelds"><FaSquareXTwitter className="size-14 hover:text-zinc-500 duration-70 cursor-pointer" /></a>
 					<a href="https://github.com/tempelfeldsg"><IoLogoGithub className="size-14 hover:text-zinc-500 duration-70 cursor-pointer" /></a>
 					<a href="mailto:tempelfelds.gustavs@gmail.com"><IoIosMail className="size-14 hover:text-zinc-500 duration-70 cursor-pointer" /></a>
 				</div>
