@@ -29,8 +29,8 @@ return (
         	</h1>
 
 		<div className="flex font-[Main] justify-start items-center gap-4 mt-2">
+      			<p className="text-zinc-500 text-sm">{pf.desc}</p>
       			<p className="text-zinc-500 text-sm">{pf.date}</p>
-      			<p className="text-zinc-500 text-sm">{pf.readTime}</p>
     		</div>
         	<div className="prose prose-invert max-w-none mt-24 font-[Main]"
           		dangerouslySetInnerHTML={{ __html: pf.content }}
