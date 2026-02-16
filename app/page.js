@@ -65,7 +65,7 @@ return (
 				<div className="flex items-center justify-evenly gap-8 text-zinc-300 pt-12">
 					<a href="https://x.com/tempelfelds"><FaSquareXTwitter className="size-14 hover:text-zinc-500 duration-70 cursor-pointer" /></a>
 					<a href="https://github.com/tempelfeldsg"><IoLogoGithub className="size-14 hover:text-zinc-500 duration-70 cursor-pointer" /></a>
-					<a href="mailto:tempelfelds.gustavs@gmail.com"><IoIosMail className="size-14 hover:text-zinc-500 duration-70 cursor-pointer" /></a>
+					<a href="mailto:gustavs@tempelfelds.com"><IoIosMail className="size-14 hover:text-zinc-500 duration-70 cursor-pointer" /></a>
 				</div>
 				
 				</motion.div>
