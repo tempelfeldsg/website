@@ -13,7 +13,7 @@ export default function Home()
 	const { scrollYProgress } = useScroll({target: containerRef, offset: ['start start', 'end start']});
 
   	const clipPath = useTransform(scrollYProgress, [0, 0.50], ['inset(100% 0 0 0)', 'inset(0 0 0 0)']);
-	const scale = useTransform(scrollYProgress, [0.2, 0.5], [1.25, 0.5]);
+	const scale = useTransform(scrollYProgress, [0, 0.5], [1.25, 0.5]);
 	const backcard_opacity = useTransform(scrollYProgress, [0.45, 0.5], [0, 1]);
 	const chesspiece_opacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
 	const card_opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0], {clamp: true});
