@@ -44,7 +44,7 @@ return (
 			<div className="text-white font-[Title] text-md md:text-4xl text-center">Gustavs Tempelfelds</div>
 			<div className="text-zinc-300 font-[Main] text-xs pt-1 md:pt-0 text-center ">Blender Tools & Pipeline Developer</div>
 			<div className="text-zinc-300 font-[Main] md:text-xs text-sm text-center pt-14 md:px-20 md:pt-12 leading-relaxed ">Technical artist and developer building Blender tools, add-ons, and production pipelines. I design systems that streamline workflows and support reliable, scalable production.</div>
-			<div className="flex justify-center font-[Main] text-xs md:text-sm gap-8 text-zinc-200 items-center pt-16 md:pt-8">
+			<div className="flex justify-center font-[Main] text-xs md:text-sm gap-5 text-zinc-200 items-center pt-16 md:pt-8">
 				<Link href="/blog" className="h-8 w-12 flex items-center justify-center text-center hover:text-zinc-500 cursor-pointer duration-70 ">Blog</Link>
 				<Link href="/portfolio" className="h-8 w-12 flex items-center justify-center text-center hover:text-zinc-500 cursor-pointer duration-70">Portfolio</Link>
 				<div className="h-8 w-12 flex items-center justify-center text-center hover:text-zinc-500 cursor-pointer duration-70" onClick={scrollToBottom}>Contact</div>
