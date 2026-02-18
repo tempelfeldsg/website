@@ -16,19 +16,19 @@ export default async function PortfolioPost({ params })
   	}
 
 return (
-<main className="p-12 bg-black text-white min-h-screen">
+<main className="py-8 px-4 md:p-12 bg-black text-white min-h-screen">
 	<div className="max-w-3xl pt-4 mb-4">
   		<Link href="/portfolio" className="text-zinc-500 text-start flex hover:text-zinc-400 text-sm font-[Main]">
     		← Back 
   		</Link>
 	</div>
 
-	<article className="max-w-8xl mx-auto py-8 flex flex-col items-center justify-start">
-        	<h1 className="text-3xl text-center font-[Title] ">
+	<article className="max-w-8xl mx-auto md:py-8 pt-6 flex flex-col items-center justify-start">
+        	<h1 className="text-xl md:text-3xl text-center font-[Title] ">
           		{pf.title}
         	</h1>
 
-		<div className="flex font-[Main] justify-start items-center gap-4 mt-2">
+		<div className="flex font-[Main] justify-start items-center gap-4 mt-3 md:mt-2">
       			<p className="text-zinc-500 text-sm">{pf.desc}</p>
       			<p className="text-zinc-500 text-sm">{pf.date}</p>
     		</div>
