@@ -2,7 +2,7 @@ import "./globals.css";
 
 
 export const metadata = {
-	title: "Gustavs Tempelfelds – Tools & Pipeline Developer for Blender",
+	title: "Gustavs Tempelfelds | Blender Tools & Pipeline Developer",
 	description: "Technical artist and tools developer specializing in Blender pipeline automation, add-ons, and production workflows for real-time and CG teams.",
 
 
