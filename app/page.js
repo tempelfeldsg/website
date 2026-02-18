@@ -34,7 +34,7 @@ return (
 		<motion.div className="relative w-full h-full" style={{ scale }}>
           		<Image
             			src="/chessboard_side.png"
-            			alt="Chess rendered"
+            			alt="Chess Knight"
             			className="hidden md:inline absolute inset-0 h-full w-full object-cover object-center pointer-events-none"
 				fill
 				priority
@@ -53,7 +53,7 @@ return (
           		<motion.div className="absolute flex items-center justify-center inset-0" style={{ clipPath }}>
             			<Image
               				src="/chessboard_side_wireframe.png"
-              				alt="chess wireframe"
+              				alt="Chess Knight Wireframe"
               				className="md:inline hidden h-full w-full object-cover object-center pointer-events-none"
 					style={{ opacity: chesspiece_opacity }}
 					fill
