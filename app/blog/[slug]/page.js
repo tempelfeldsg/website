@@ -17,7 +17,7 @@ export default async function BlogPost({ params })
 
 return (
 <main className="py-8 px-4 md:p-12 bg-black text-white min-h-screen">
-	<div className="max-w-3xl pt-4 mb-4">
+	<div className="w-fit pt-4 mb-4">
   		<Link href="/blog" className="text-zinc-500 text-start flex hover:text-zinc-400 text-sm font-[Main]">
     		← Back 
   		</Link>

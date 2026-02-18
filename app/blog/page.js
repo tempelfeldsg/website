@@ -6,7 +6,7 @@ export default function Blog()
 
 return (
 <main className="bg-black text-white min-h-screen py-8 px-4 md:px-12 md:py-12">
-	<div className="max-w-3xl pt-4 mb-4">
+	<div className="w-fit pt-4 mb-4">
   		<Link href="/" className="text-zinc-500 text-start flex hover:text-zinc-400 text-sm font-[Main]">
     		← Back 
   		</Link>
