@@ -1,11 +1,6 @@
-## TODO:
-
--- Add description
 
 ## FIX:
 -- Fix flicker due to wireframe image loading in before the first render image
-
--- Adjust for mobile
 
 -- Adjust for scaling
 
@@ -13,5 +8,3 @@
 
 -- make wireframe render invisible at first load
 
-
--- fix back button being too big
