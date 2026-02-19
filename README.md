@@ -4,6 +4,8 @@
 
 -- Adjust for scaling
 
+-- fix smoothness
+
 -- fix different browsers not rendering correctly
 
 -- make wireframe render invisible at first load
