@@ -1,12 +1,14 @@
 export const posts = [
 {
-	slug: "Test",
-    	title: "Placeholder Title",
-	readTime: "5 Min Read",
-	desc: "A short description",
+	slug: "me",
+    	title: "Me",
+	readTime: "5 Minute Read",
+	desc: "A brief introduction of me",
     	date: "February 2026",
     	content: `
-<h2>testing</h2>
+
+<p class="font-[Main]">ttesting placeholder testingtesting placeholder testingtesting placeholder testingtesting placeholder testingtesting placeholder testingtesting placeholder testing<testing placeholder testing<esting placeholder testing</p>
+
 `},
 
 ]
