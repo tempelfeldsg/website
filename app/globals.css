@@ -1,8 +1,14 @@
 @import "tailwindcss";
 
+@layer base {
+	html, body {
+		@apply bg-black;
+	}
+}
+
 :root {
   --background: #000000;
-  --foreground: #171717;
+  --foreground: #000000;
 }
 
 @font-face {
