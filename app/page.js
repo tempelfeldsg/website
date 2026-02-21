@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link"
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { useState, useEffect } from 'react';
 import { useRef } from 'react';
 import { IoLogoGithub, IoIosMail } from "react-icons/io";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -10,6 +11,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 export default function Home() 
 {
   	const containerRef = useRef(null);
+	const [vis, setVis] = useState(false);
 
 	const { scrollYProgress } = useScroll({target: containerRef, offset: ['start start', 'end start']});
 
@@ -19,6 +21,10 @@ export default function Home()
 	const chesspiece_opacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
 	const card_opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0], {clamp: true});
 	const card_display = useTransform(scrollYProgress, (value) => (value > 0.2 ? "none" : "block"));
+
+	useEffect(() => {
+		setVis(true);
+	}, []);
 
 	const scrollToBottom = () => {
   		window.scrollTo({
@@ -35,7 +41,7 @@ return (
           		<Image
             			src="/chessboard_side.png"
             			alt="Chess Knight"
-            			className="hidden md:inline absolute inset-0 h-full w-full object-cover object-center pointer-events-none"
+            			className={`${vis ? "opacity-100" : "opacity-0"}  duration-200 hidden md:inline absolute inset-0 h-full w-full object-cover object-center pointer-events-none`}
 				fill
 				priority
 				unoptimized
@@ -54,7 +60,7 @@ return (
             			<Image
               				src="/chessboard_side_wireframe.png"
               				alt="Chess Knight Wireframe"
-              				className="md:inline hidden h-full w-full object-cover object-center pointer-events-none"
+              				className={`${vis ? "opacity-100" : "opacity-0"} duration-200 md:inline hidden h-full w-full object-cover object-center pointer-events-none`}
 					style={{ opacity: chesspiece_opacity }}
 					fill
 					priority
