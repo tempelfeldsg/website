@@ -1,10 +1,10 @@
 export const portfolio = [
 {
-	slug: "Test",
-    	title: "Placeholder Title",
+	slug: "blenderbox",
+    	title: "BlenderBox",
 	link: "blenderbox",
-	desc: "A short description",
-    	date: "February 2026",
+	desc: "A seamless plug & play headless Blender render node",
+    	date: "2026",
     	content: `
 <h2>testing</h2>
 `},
