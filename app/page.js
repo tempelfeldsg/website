@@ -18,7 +18,7 @@ export default function Home()
 	const backcard_opacity = useTransform(scrollYProgress, [0.45, 0.5], [0, 1]);
 	const chesspiece_opacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
 	const card_opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0], {clamp: true});
-	const card_display = useTransform(scrollYProgress, (value) => (value > 0.1 ? "none" : "block"));
+	const card_display = useTransform(scrollYProgress, (value) => (value > 0.2 ? "none" : "block"));
 
 	const scrollToBottom = () => {
   		window.scrollTo({
